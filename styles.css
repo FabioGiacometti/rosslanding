@@ -282,6 +282,7 @@ article {
 }
 
 .card {
+  width: 100%;
   padding: 20px;
   border: 1px solid #00000025;
   width: 50%;
@@ -388,6 +389,14 @@ footer ul li a {
     -webkit-transform: translate(0px, 9px);
     transform: translate(9px, 3px);
   }
+  
+  .card{
+    width: 100%;
+  }
+  .quote{
+    display:none
+  
+}
 }
 
 button {
