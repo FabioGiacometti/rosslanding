@@ -64,7 +64,7 @@ footer {
 }
 #home {
   p {
-    width: 60%;
+    width: 80%;
   }
   article:nth-child(1) {
     h1 {
@@ -121,8 +121,8 @@ footer {
 
 section {
   padding: 100px;
-  #casos_de_exito{
-      padding-botom: 0;
+  #casos_de_exito {
+    padding-botom: 0;
   }
 }
 
@@ -152,17 +152,17 @@ article {
   flex-basis: 10%;
 }
 
-.logo2{
-    background-image: url(../Images/logo3.png);
-    /* display: block; */
-    background-repeat: no-repeat;
-    background-size: contain;
-    font-size: 7rem;
-    width: 0.5em;
-    height: 0.5em;
-    margin: 10px;
-    flex-basis: 10%;
-  }
+.logo2 {
+  background-image: url(../Images/logo3.png);
+  /* display: block; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 7rem;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 10px;
+  flex-basis: 10%;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -226,7 +226,6 @@ article {
 }
 
 #casos_de_exito {
-
   .card {
     margin: 0;
   }
@@ -296,7 +295,7 @@ footer {
     display: flex;
     flex-direction: column;
     list-style: none;
-    width:25%;
+    width: 25%;
 
     li a {
       color: white;
@@ -333,16 +332,21 @@ footer {
   #como_lo_hacemos article img {
     top: 80px;
   }
-  #home article:nth-child(1) .x::before {
-    content: "";
-    background: #ff9900;
-    width: 30vw;
-    height: 10.3vw;
-    position: absolute;
-    z-index: -1;
-    /* top: 1px; */
-    -webkit-transform: translate(0px, 9px);
-    transform: translate(9px, 3px);
+  #home {
+    p {
+      width: 100%;
+    }
+    article:nth-child(1) .x::before {
+      content: "";
+      background: #ff9900;
+      width: 30vw;
+      height: 10.3vw;
+      position: absolute;
+      z-index: -1;
+      /* top: 1px; */
+      -webkit-transform: translate(0px, 9px);
+      transform: translate(9px, 3px);
+    }
   }
 }
 
