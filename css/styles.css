@@ -8,6 +8,7 @@
   --background: rgba(254, 254, 254, 1);
   --border: solid 1px var(--text);
   --gradient: linear-gradient(313deg, #ffa600 22%, #ff6a00 100%);
+  --gradient2: linear-gradient(45deg, #000000 0%, #ff0000 100%);
 }
 
 * {
@@ -90,10 +91,6 @@ header ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-card {
-  width: 50px;
 }
 
 footer {
@@ -182,6 +179,7 @@ article {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  height: 20px;
 }
 
 .grid {
@@ -243,6 +241,11 @@ article {
   height: 100%;
 }
 
+#trabaja_con_nosotros p {
+  width: 75%;
+  color: white;
+}
+
 .map {
   width: 400px;
   height: 240px;
@@ -267,14 +270,23 @@ article {
 
 #casos_de_exito .card {
   margin: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 50px;
 }
 
 #casos_de_exito h2 {
-  height: 60px;
+  height: 40px;
+  margin-top: 38px;
 }
 
 #casos_de_exito article {
   width: 100%;
+}
+
+#casos_de_exito h3 {
+  position: absolute;
+  bottom: 15px;
 }
 
 .gridx3 {
@@ -318,6 +330,7 @@ article {
   transition: box-shadow 200ms;
   transition: box-shadow 200ms, -webkit-box-shadow 200ms;
   border-radius: 3px;
+  width: 100%;
 }
 
 .card:hover {
@@ -395,6 +408,30 @@ footer ul li a {
   display: none;
 }
 
+.card-img {
+  width: 120%;
+  height: 200px;
+  margin: -40px -40px 0 -40px;
+  background-size: cover;
+  background-position: center;
+}
+
+#ingenieria-de-software {
+  background-image: url("https://at.doit.wisc.edu/wp-content/uploads/2017/11/Scrum-Methodology-Diagram.png");
+}
+
+#ingenieria-de-datos {
+  background-image: url("https://images.ctfassets.net/as3oyv15spgt/4UWQ4HgCvuegkQygEym4Aw/1d538666bd96bc6d82c08d56562d4f71/customerxyz-traffic-1000w.png");
+}
+
+#automatizacion-de-software {
+  background-image: url("https://openautomationsoftware.com/wp-content/uploads/2016/11/OAS-network-graphic-simple-labels-V3-1.png");
+}
+
+#procesos-de-innovacion {
+  background-image: url("https://image.slidesharecdn.com/8141-01-innovation-funnel-141216140900-conversion-gate02/95/innovation-funnel-analysis-diagram-for-powerpoint-9-638.jpg?cb=1418738987");
+}
+
 @media (max-width: 822px) {
   #navbar {
     display: none;
@@ -466,6 +503,9 @@ footer ul li a {
 }
 
 @media (max-width: 600px) {
+  .quote {
+    display: none;
+  }
   section {
     padding: 30px !important;
   }
