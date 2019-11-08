@@ -10,35 +10,38 @@
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="animate.css" />
-    
   </head>
 
   <body>
     <header>
-      <!-- logo -->
-      <div class="logo animated fadeInLeft"></div>
-      <!-- Menu de navegacion -->
-      <ul id="navbar" class="nav animated fadeIn">
-        <li><a href="#home">Home</a></li>
+      
+      <div class="logo animated fadeInLeft">
+        <img src="Images/logo1.svg" alt="" />
+      </div>
+      
+      <input id="nav-toggle" type="checkbox" class="nav-toggle" />
+
+      <ul id="navbar" class="nav animated">
         <li><a href="#que_hacemos">¿Qué Hacemos?</a></li>
         <li><a href="#quienes_somos">¿Quiénes somos?</a></li>
         <li><a href="#trabaja_con_nosotros">Trabaja Con Nosotros</a></li>
-        <li><a href="">Blog</a></li>
         <li><a href="#contacto">Contacto</a></li>
-        <li><a href="">ENG</a></li>
-        <li><a href="">ESP</a></li>
       </ul>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <div class="floater">
+        <ul class="nav">
+          <li><a href="" class="card" id="eng">ENG</a></li>
+          <li><a href="" class="card" id="esp">ESP</a></li>
+        </ul>
+      </div>
     </header>
 
     <div class="wrapper">
       <section id="home">
-        <!-- Seccion HOME -->
         <article>
-          <h1>
-            OUTSIDE THE<span class="x">BOX</span>.</h1>
-         
-          
-
+          <h1>OUTSIDE THE<span class="x">BOX</span>.</h1>
           <p>
             Somos una empresa que transforma organizaciones con ideas
             disruptivas e innovadoras. Gestionamos ese proceso de cambio, de
@@ -48,15 +51,15 @@
           <button class="primary">¿Hablamos?</button>
           <button class="secondary">Trabaja con Nosotros</button>
         </article>
-        <!-- Seccion Que hacemos -->
+
         <h1>
           ¿QUÉ HACEMOS?
         </h1>
+
         <article>
           <h2>
             INNOVACIÓN
           </h2>
-
           <p>
             Nos especializamos en el acompañamiento a empresas, promoviendo el
             desarrollo de una cultura de innovación y el aprendizaje de
@@ -70,7 +73,8 @@
           <h3>HACEMOS INNOVAR</h3>
         </article>
       </section>
-      <section id="como_lo_hacemos" class="fondo_azul">
+
+      <section id="como_lo_hacemos" class="">
         <h1>
           ¿CÓMO LO HACEMOS?
         </h1>
@@ -79,7 +83,7 @@
             <img src="Images/Group.png" alt="Ingenieria de software" />
             <div>
               <h2>INGENIERÍA <br />DE SOFTWARE</h2>
-              <p class="fondo_azul">
+              <p class="">
                 Desarrollamos ingeniería de software con un equipo de trabajo
                 ágil y multidisciplinario. Trabajamos sobre las necesidades de
                 nuestros clientes y generamos soluciones que agregan valor al
@@ -93,7 +97,7 @@
             <div>
               <h2>TRANSFORMACIÓN <br />DIGITAL</h2>
 
-              <p class="fondo_azul">
+              <p class="">
                 Diseñamos y lideramos procesos de transformación digital,
                 mediante estrategias corporativas personalizadas y escalables.
                 Aplicamos tecnología para resolver problemáticas concretas,
@@ -112,7 +116,7 @@
                 CULTURA
               </h2>
 
-              <p class="fondo_azul">
+              <p class="">
                 La cultura es la base para el desarrollo de la innovación y de
                 la implementación de manera sustentable de cualquier estrategia
                 de transformación digital. Es por eso que lo primero ¡Son las
@@ -129,7 +133,7 @@
             <div>
               <h2>CONSTRUIMOS <br />COMUNIDAD</h2>
 
-              <p class="fondo_azul">
+              <p class="">
                 Somos parte de un ecosistema en movimiento constante.
                 Construimos relaciones con asociaciones, organismos públicos,
                 fundaciones, incubadoras, universidades y otras instituciones.
@@ -140,8 +144,6 @@
             </div>
           </article>
         </div>
-        <!-- <svg class="corte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" style="width: 100vw; left: 0">
-          <polygon fill="white" points="0,100 100,0 100,100"/> -->
       </section>
 
       <section id="casos_de_exito">
@@ -167,7 +169,6 @@
             <h2>
               Ingenieria de Datos
             </h2>
-
             <p>
               Trabajamos en diferentes proyectos, detectando anomalías, patrones
               y correlaciones de grandes conjuntos de datos. Además, utilizamos
@@ -176,19 +177,10 @@
             </p>
           </article>
 
-          <!-- <article>
-            <h2>
-              Crawlers
-            </h2>
-
-            
-          </article> -->
-
           <article class="card">
             <h2>
               Ingenieria de Software
             </h2>
-
             <p>
               Diseñamos, en conjunto con nuestros clientes, plataformas y
               aplicaciones de software ad hoc. Gestionamos los proyectos de
@@ -214,32 +206,27 @@
       </section>
 
       <section id="quienes_somos">
-        <!-- Seccion Quienes Somos? -->
-
         <h1>
           ¿QUIÉNES SOMOS?
         </h1>
         <div class="container">
           <article class="perfil card">
             <div id="ramiro" class="retrato">
-                <p class="quote">
-                    “Cometer errores es lo más normal, sólo así aprendemos y
-                    avanzamos.”
-                    <span class="resaltado"
-                      >“Si nos equivocamos, que sea rápido y barato”</span>
-                  </p>
+              <p class="quote">
+                “Cometer errores es lo más normal, sólo así aprendemos y
+                avanzamos.”
+                <span class="resaltado"
+                  >“Si nos equivocamos, que sea rápido y barato”</span
+                >
+              </p>
             </div>
-
-            <!-- <img src="Images/7b8b73db-0d08-4889-8f0f-540a4d9719a4.png" alt="" class="retrato" /> -->
 
             <h2>
               Ramiro Ortega
             </h2>
             <h3>
-
               CO-Founder at ROSS
             </h3>
-
             <p>
               Soy Ingeniero en Telecomunicaciones y tengo más de 20 años de
               experiencia en el desarrollo de software y en IT, gestionando
@@ -249,20 +236,18 @@
               de equipos de alto rendimiento, orientado a que el trabajo sea más
               productivo, eficiente, simple y divertido.
             </p>
-
           </article>
 
           <article class="perfil card">
             <div id="sebastian" class="retrato">
               <p class="quote">
-              “Contanos qué es lo que te duele”.
-              <span class="resaltado"
-                >Lo analizamos juntos y te brindamos soluciones a la medida de
-                tus necesidades.</span
-              >
-            </p>
-          </div>
-            <!-- <img src="Images/66485566_323745275246625_708678777830416896_n.png" alt="" class="retrato" /> -->
+                “Contanos qué es lo que te duele”.
+                <span class="resaltado">
+                  Lo analizamos juntos y te brindamos soluciones a la medida de
+                  tus necesidades.
+                </span>
+              </p>
+            </div>
             <h2>
               Sebastián Sosa
             </h2>
@@ -277,8 +262,6 @@
               divierto muchísimo coordinando grandes equipos interdisciplinarios
               de millennials, aprendo de ellos todos los días.
             </p>
-
-            
           </article>
         </div>
         <h1 class="colaboradores">
@@ -286,30 +269,29 @@
         </h1>
       </section>
 
-      <section id="trabaja_con_nosotros" class="fondo_azul">
-        <!-- seccion Trabaja con Nosotros -->
+      <section id="trabaja_con_nosotros" class="">
         <h1>
           TRABAJA CON NOSOTROS
         </h1>
         <div class="container">
-          <div class="fondo_azul">
+          <div class="">
             <article>
               <h2>
                 ¿Por qué ROSS?
               </h2>
 
-              <p class="fondo_azul">
+              <p class="">
                 Si tiendes a enfocar los problemas de una forma diferente y
                 creativa éste es tu lugar!
               </p>
 
-              <p class="fondo_azul">
+              <p class="">
                 En ROSS vas a explorar nuevas posibilidades, con desafíos
                 concretos en donde vas a poder sumergirte, jugar, compartir y
                 aprender. Tenemos la convicción de que el trabajo en equipo es
                 generosidad. ¿Te sumas?
               </p>
-              <p class="fondo_azul">
+              <p class="">
                 Envía tu curriculum a:
                 <span class="resaltado">rrhh@ross.com</span>
               </p>
@@ -320,7 +302,6 @@
       </section>
 
       <section id="contacto">
-        <!-- Seccion Contacto  -->
         <h1>
           CONTACTO
         </h1>
@@ -345,15 +326,14 @@
           ><br />
           <input name="democheckbox" type="checkbox" value="1" /> Deseo que me
           contacten telefonicamente<br />
-          <button type="submit" value="Submit">Submit</button>
+          <button type="submit" value="Submit" class="primary">Enviar</button>
         </form>
       </section>
+
       <section id="donde_estamos">
-        <!-- Seccion Donde estamos -->
         <h1>
           ¿Dónde estamos?
         </h1>
-
         <div class="container">
           <article class="donde_estamos card">
             <h2>
@@ -402,25 +382,26 @@
         </div>
       </section>
     </div>
+
     <footer>
       <article>
-        <div class="logo2"></div>
-        
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#que_hacemos">¿Qué Hacemos?</a></li>
-            <li><a href="#quienes_somos">¿Quiénes somos?</a></li>
-          </ul>
-          <ul>
-            <li><a href="#trabaja_con_nosotros">Trabaja Con Nosotros</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-          <ul>
-            <li><a href="">ENG</a></li>
-            <li><a href="">ESP</a></li>
-          </ul>
-              </article>
+        <div class="logo"><img src="Images/logo2.svg" alt="" /></div>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#que_hacemos">¿Qué Hacemos?</a></li>
+          <li><a href="#quienes_somos">¿Quiénes somos?</a></li>
+        </ul>
+        <ul>
+          <li><a href="#trabaja_con_nosotros">Trabaja Con Nosotros</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <ul>
+          <li><a href="">ENG</a></li>
+          <li><a href="">ESP</a></li>
+        </ul>
+      </article>
     </footer>
   </body>
 </html>
