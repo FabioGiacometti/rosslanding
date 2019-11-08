@@ -82,12 +82,6 @@ header {
   }
 }
 
-footer {
-  height: 85px;
-  color: var(--blue-secondary);
-}
-
-
 #home {
   padding-top: 100px;
 
@@ -215,10 +209,9 @@ article {
     width: 30%;
     height: 100%;
   }
-  p{
+  p {
     width: 75%;
-    color: white
-
+    color: white;
   }
 }
 
@@ -244,10 +237,9 @@ article {
   margin-bottom: 80px;
   .card {
     margin: 0;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
     padding-bottom: 50px;
-    
   }
   h2 {
     height: 40px;
@@ -257,10 +249,9 @@ article {
   article {
     width: 100%;
   }
-  h3{
+  h3 {
     position: absolute;
     bottom: 15px;
-    
   }
 }
 
@@ -308,19 +299,20 @@ footer {
   padding: 100px;
   overflow: hidden;
   display: flex;
+  
   article {
     width: 100%;
     align-self: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 0;
   }
+
   ul {
     display: flex;
     flex-direction: column;
     list-style: none;
-    width: 25%;
 
     li a {
       color: white;
@@ -343,48 +335,46 @@ footer {
   }
 }
 
-.nav-toggle { //esconde el input
+.nav-toggle {
+  //esconde el input
   display: none;
 }
 
-.nav-toggle-label{
-  display:none
+.nav-toggle-label {
+  display: none;
 }
 
-.card-img{
+.card-img {
   width: 120%;
   height: 200px;
-  margin:-40px -40px 0 -40px;
+  margin: -40px -40px 0 -40px;
   background-size: cover;
   background-position: center;
 }
 
-#ingenieria-de-software{
-  background-image: url("https://at.doit.wisc.edu/wp-content/uploads/2017/11/Scrum-Methodology-Diagram.png") 
+#ingenieria-de-software {
+  background-image: url("https://at.doit.wisc.edu/wp-content/uploads/2017/11/Scrum-Methodology-Diagram.png");
 }
 
-#ingenieria-de-datos{
-  background-image: url("https://images.ctfassets.net/as3oyv15spgt/4UWQ4HgCvuegkQygEym4Aw/1d538666bd96bc6d82c08d56562d4f71/customerxyz-traffic-1000w.png")
+#ingenieria-de-datos {
+  background-image: url("https://images.ctfassets.net/as3oyv15spgt/4UWQ4HgCvuegkQygEym4Aw/1d538666bd96bc6d82c08d56562d4f71/customerxyz-traffic-1000w.png");
 }
 
-#automatizacion-de-software{
+#automatizacion-de-software {
   background-image: url("https://openautomationsoftware.com/wp-content/uploads/2016/11/OAS-network-graphic-simple-labels-V3-1.png");
 }
 
-#procesos-de-innovacion{
-  background-image: url("https://image.slidesharecdn.com/8141-01-innovation-funnel-141216140900-conversion-gate02/95/innovation-funnel-analysis-diagram-for-powerpoint-9-638.jpg?cb=1418738987")
+#procesos-de-innovacion {
+  background-image: url("https://image.slidesharecdn.com/8141-01-innovation-funnel-141216140900-conversion-gate02/95/innovation-funnel-analysis-diagram-for-powerpoint-9-638.jpg?cb=1418738987");
 }
 
-
 @media (max-width: 822px) {
-  
-//mobile navigation
+  //mobile navigation
 
-
-#navbar {
+  #navbar {
     display: none;
   }
-  
+
   .nav-toggle:checked ~ #navbar {
     display: flex;
     align-items: baseline;
@@ -396,80 +386,101 @@ footer {
     width: 100%;
     background-color: white;
   }
-  
-  .nav-toggle-label{
+
+  .nav-toggle-label {
     position: absolute;
-    top:0;
-    right:0;
-    margin-right: 3em;
+    top: 0;
+    right: 0;
+    margin-right: 24px;
     display: flex;
     height: 100%;
-    align-items: center
+    align-items: center;
   }
-  
+
   .nav-toggle-label span,
   .nav-toggle-label span::before,
-  .nav-toggle-label span::after{
-    display:block;
-      background: var(--main);
-      height: 2px;
-      width: 2em;
-      border-radius: 2px;
-      position: relative
-    }
-    
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after{
-      content: "";
-      position: absolute;
-    }
-    .nav-toggle-label span::before{
-      bottom: 7px
-    }
-    
-    .nav-toggle-label span::after{
-      top: 7px
-    }
-
-    h1 {
-      line-height: 1em;
-      margin: 20px -10px 20px 0 !important;
-    }
-    
-    .gridx3,
-    .grid {
-      grid-template-columns: 1fr;
-    }
-    
-    #navbar {
-      flex-direction: column;
-    }
+  .nav-toggle-label span::after {
+    display: block;
+    background: var(--main);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
   }
 
-  @media (max-width: 600px) {
-    .quote{
-      display: none
-    }
-    section{
-      padding: 30px!important
-    }
-
-    button{
-      width: 100%
-    }
-
-    header{
-      padding: 20px 20px 20px 33px;
-    }
-
-    section {
-      padding: 30px;
-    }
-    .container {
-      flex-direction: column;
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+  }
+  .nav-toggle-label span::before {
+    bottom: 7px;
   }
 
-    #trabaja_con_nosotros img {
+  .nav-toggle-label span::after {
+    top: 7px;
+  }
+
+  h1 {
+    line-height: 1em;
+    margin: 20px -10px 20px 0 !important;
+  }
+
+  .gridx3,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #navbar {
+    flex-direction: column;
+  }
+  footer {
+    height: 50vh;
+    display: block; 
+    color: var(--blue-secondary);
+    padding: 30px;
+    article{
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      align-items: normal;
+    
+    }
+    .logo{
+      height: 15px;
+    }
+    ul{
+      li{
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .quote {
+    display: none;
+  }
+  section {
+    padding: 30px !important;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  header {
+    padding: 20px 20px 20px 33px;
+  }
+
+  section {
+    padding: 30px;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  #trabaja_con_nosotros img {
     height: auto;
   }
 
@@ -495,7 +506,7 @@ footer {
     }
   }
   .floater {
-    top: 97px !important;
+    top: 82px !important;
     right: 2px !important;
     transform: scale(0.9);
   }
